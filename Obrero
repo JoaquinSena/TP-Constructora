@@ -1,0 +1,39 @@
+using System;
+
+namespace TP_Final
+{
+	
+	public class Obrero
+	{
+		private string nomape,cargo;
+		private int dni,legajo;
+		private Grupo_Obreros Grupo;
+		public Obrero(string nomape,string cargo,int dni,int legajo,Grupo_Obreros Grupo)
+		{
+			this.nomape=nomape;
+			this.cargo=cargo;
+			this.dni=dni;
+			this.legajo=legajo;
+		}
+		public string Nomape(){
+            set{nomape=value;}
+            get{return nomape;}
+        }
+        public string Cargo(){
+            set{cargo=value;}
+            get{return cargo;}
+        }
+        public int DNI(){
+            set{dni=value;}
+            get{return dni;}
+        }
+        public int Legajo(){
+            set{legajo=value;}
+            get{return legajo;}
+        }
+        public Grupo_Obreros Grupo(){
+            set{Grupo=value;}
+            get{return Grupo;}
+        }
+	}
+}
