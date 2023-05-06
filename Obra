@@ -1,0 +1,25 @@
+using System;
+
+namespace TP_Final
+{
+	public class Obra
+	{
+		private string Tipodeobra;
+		private DueñoObra nombre;
+		private DueñoObra dni;
+		private int TEEjecucion,Progreso,codigoObra;
+		private double costo;
+        private Grupo_Obreros NumeroGrupo;
+		
+		public Obra(string TObra,DueñoObra name, DueñoObra dni,int TEstimado,int Progreso,int Codigo,double costo)
+		{
+			Tipodeobra=TObra;
+			nombre=name;
+			this.dni=dni;
+			TEEjecucion=TEstimado;
+			this.Progreso=Progreso;
+			codigoObra=Codigo;
+			this.costo=costo;
+		}
+	}
+}
