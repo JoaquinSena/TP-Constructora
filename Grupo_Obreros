@@ -1,0 +1,36 @@
+using System;
+using System.Collections;
+namespace TP_Final
+{
+	
+	public class Grupo_Obreros
+	{
+		private ArrayList grupo1;
+		private ArrayList grupo2;
+		private ArrayList grupo3;
+		private ArrayList grupo4;
+		private ArrayList grupo5;
+		private ArrayList grupo6;
+		private ArrayList grupo7;
+		private ArrayList grupo8;
+		private Obra codigoObra;
+		
+		public Grupo_Obreros(Obra Codigo)
+		{
+			Codigo= codigoObra;
+            grupo1= new ArrayList();
+			grupo2= new ArrayList();
+			grupo3= new ArrayList();
+			grupo4= new ArrayList();
+			grupo5= new ArrayList();
+			grupo6= new ArrayList();
+			grupo7= new ArrayList();
+			grupo8= new ArrayList();
+			
+		}
+        public Obra Codigo(){
+            set{Codigo= value;}
+            get {return Codigo;}
+        }
+	}
+}
