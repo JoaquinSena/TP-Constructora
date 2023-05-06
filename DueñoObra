@@ -1,0 +1,25 @@
+using System;
+
+namespace TP_Final
+{
+	
+	public class DueñoObra
+	{
+		private string nombre;
+		private int dni;
+		public DueñoObra(string nombre,int dni)
+		{
+			this.nombre=nombre;
+            this.dni=dni;
+		}
+        public string Nombre(){
+            set{nombre=value;}
+            get{return nombre;}
+        }
+        public int DNI(){
+            set{dni= value;}
+            get{return dni;}
+        }
+	}
+
+}
