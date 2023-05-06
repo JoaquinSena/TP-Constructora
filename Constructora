@@ -1,0 +1,26 @@
+using System;
+using System.Collections;
+namespace TP_Final
+{
+	
+	public class Constructora
+	{
+		private string nombre;
+		private ArrayList Obras;
+        private ArrayList ObrasFinalizadas;
+        private ArrayList ListaObreros;
+		public Constructora(string name)
+		{
+			nombre=name;
+            Obras= new ArrayList();
+            ListaObreros= new ArrayList();
+		}
+		public ArrayList Obras(){
+			get{return ArrayList Obras}
+			
+		}
+        public void AñadirObrero(Obrero Obrero){
+            ListaObreros.add(Obrero);
+        }
+	}
+}
