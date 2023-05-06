@@ -1,0 +1,79 @@
+/*
+ Una empresa constructora tiene varias obras en ejecución y 8 grupos de obreros que trabajan en las
+obras. De cada obra se conoce el nombre y dni del propietario, código interno (se lo asigna el
+sistema), tipo de obra (construcción, remodelación, ampliación, etc.), el tiempo estimado de
+ejecución (expresado en días), estado de avance (porcentaje), el nro de grupo de obreros asignado a
+la misma y el costo. De cada obrero se almacena su nombre y apellido, dni, nro legajo, cargo
+(capataz, albañil, peón, plomero, electricista, etc.) y grupo al que pertenece. De cada grupo de
+obreros se conoce el código de obra en la que están trabajando (0 en caso de no estar asignado a
+ninguna obra) y los integrantes.
+Se deberá desarrollar una aplicación, utilizando las clases que considere necesarias, que resuelva las
+funcionalidades que se muestran en el siguiente menú:
+a) Contratar un obrero nuevo (se agrega a la empresa y a un grupo)
+b) Eliminar un obrero (se elimina de la empresa y de su grupo)
+c) Listado de obreros
+d) Listado de obras
+e) Agregar una obra y asignarle un grupo de obreros. Se debe verificar que haya grupo libre; en
+caso contrario se debe levantar una excepción que informe lo sucedido.
+f) Modificar el estado de avance de una obra. Si el estado de avance llega al 100% la obra debe
+darse por finalizada, se elimina del listado de obras en ejecución y se guarda en obras
+finalizadas
+g) Listado de obras finalizadas
+ */
+using System;
+
+namespace TP_Final
+{
+	class Program
+	{
+		public static void Main(string[] args)
+		{
+			bool salir= false;
+			string opcion;
+			
+			while (!salir){
+				
+				Console.WriteLine("************************************");
+				Console.WriteLine("elija una de las siguientes opciones:");
+				Console.WriteLine("************************************");
+				Console.WriteLine("a) Contratar un obrero nuevo ");
+				Console.WriteLine("b) Eliminar un obrero ");
+				Console.WriteLine("c) Listado de obreros ");
+				Console.WriteLine("d) Listado de obras ");
+				Console.WriteLine("e) Agregar una obra y asignarle un grupo de obreros.");
+				Console.WriteLine("f) Modificar el estado de avance de una obra. ");
+				Console.WriteLine("g) Listado de obras finalizadas ");
+                Console.WriteLine("h) Salir.");
+				Console.WriteLine("************************************");
+				switch(opcion){
+					case "a":
+						
+						break;
+					case "b":
+						
+                        break;
+                    case "c":
+						
+						break;
+                    case "d":
+						
+						break;
+                    case "e":
+						
+						break;
+                    case "f":
+						
+						break;
+                    case "g":
+						
+						break;
+                    case "h":
+						salir=true;
+						break;                       
+				}
+			}
+			
+			Console.ReadKey(true);
+		}
+	}
+}
